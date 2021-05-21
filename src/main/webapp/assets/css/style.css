@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 10px 0 10px 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  color: #5c768d;
+  color: #2ba91d;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #428bca;
+  color: #cac342;
 }
 
 .navbar .dropdown ul {
