@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #73db42;
+  color: #2d6760;
   text-decoration: none;
 }
 
 a:hover {
-  color: #40702b;
+  color: #5ef118;
   text-decoration: none;
 }
 
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   padding: 10px 0 10px 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  color: #73db42;
+  color: #2d6760;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #40702B;
+  color: #5ef118;
 }
 
 .navbar .dropdown ul {
@@ -374,7 +374,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(13, 30, 45, 0.6);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1121,7 +1120,7 @@ section {
   bottom: -48px;
   left: 20px;
   right: 20px;
-  background: linear-gradient(360deg, #5c768d 0%, rgba(92, 118, 141, 0.9) 35%, rgba(140, 167, 191, 0.8) 100%);
+  background: linear-gradient(360deg, #2d6760 0%, rgba(92, 118, 141, 0.9) 45%, rgba(140, 167, 191, 0.8) 100%);
   padding: 15px 0;
   border-radius: 4px;
 }
@@ -1330,7 +1329,7 @@ section {
 }
 
 #footer {
-  background: #40702B;
+  background: #2d6760;  /*  Brutto -> #40702B */
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
