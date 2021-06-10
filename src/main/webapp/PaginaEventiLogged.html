@@ -210,6 +210,41 @@
 <script src="assets/vendor/purecounter/purecounter.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+<!-- popup -->
+<div class="popScroll" style="display:none;" id="popup">
+    <div class="popup">
+<span class="ribbon top-left ribbon-primary">
+<small>Hello!</small>
+</span>
+        <h1>Complimenti!</h1>
+        <div class="subscribe-widget">
+            <div class="rounded ">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <img src="assets/img/profiloUtente/trofeo.png" class="rounded-circle" width="150">
+                </div>
+            </div>
+            <div id="nonCondiviso">
+                <h5>Condividi i tuoi successi su Facebook!</h5>
+                <button type="submit" class="button" id="condividi" onclick="condividi()">Condividi su Facebook <i class="bi bi-facebook"></i></button><br>
+                <a style="text-decoration: underline" href="paginaTrofeiLoggato.html">Indietro</a>
+            </div>
+            <div id="condiviso" style="display: none">
+                <h5>Condiviso con successo su Facebook!</h5>
+                <a style="text-decoration: underline" href="paginaTrofeiLoggato.html">Chiudi!</a>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<script>
+    function mostra() {
+        document.getElementById("popup").style.display="block";
+    }
+
+
+</script>
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 
