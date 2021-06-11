@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,27 +62,9 @@
 <main id="top">
     <div class="container">
         <div class="main-body" style="text-align:left">
-            <h1 style="margin-top: 100px;margin-bottom: 20px; display: inline-block; ">Eventi</h1>
-            <button name="Crea Evento" abled onclick="" style="float: right;margin-top: 100px;margin-bottom: 20px;">Crea Evento</button>
-
-            <!-- Barra di ricerca
-            <% ArrayList <String> eventi= new ArrayList<>();
-            eventi.add("CleanCity");
-            eventi.add("Una giornata all'insegna della sostenibilità");
-            eventi.add("CleanCity");
-            eventi.add("Una giornata all'insegna della sostenibilità");
-            eventi.add("CleanCity");
-            eventi.add("Una giornata all'insegna della sostenibilità");
+            <h1 style="margin-top: 100px;margin-bottom: 20px; display: inline-block; ">Crea Evento</h1>
 
 
-            %>-->
-            <div id='cerca' style="margin-bottom: 50px">
-                <input id="site-search" name="q" type="search" placeholder="Cerca evento..."
-                       aria-label="Search through site content" >
-                <button onclick="cerca(placeholder)"><i class="bi bi-search"></i></button>
-            </div>
-
-            <!--End Barra di ricerca-->
 
             <div class="col-sm-14">
                 <div class="row gutters-sm" style="margin-bottom: 20px;">
@@ -98,46 +81,22 @@
                                             <img src="assets/img/Eventi/earth.png" class="rounded-circle" width="150">
                                         </div>
                                         <div class="col-sm-9 col-md-9 mb-9">
+                                            <div>
+                                                <label>Nome Evento:</label>
                                             <h1 id="CleanCity" style="color: white">CleanCity</h1>
+                                            </div>
+                                            <div>
+                                                <label>Descrizione:</label>
                                             <h4 style="color: white">Una giornata all'insegna della sostenibilità</h4>
-                                            <button id="0" onclick="mostra(this.id)">Partecipa</button>
 
+                                            </div>
+                                            <button id="00" onclick="indietro(this.id)">Indietro</button>
+                                            <button id="11" onclick="mostra(this.id)">Crea</button>
                                         </div>
 
 
 
 
-                                        <div class="col-sm-3 col-md-3 mb-3">
-                                            <img src="assets/img/Eventi/earth.png" class="rounded-circle" width="150">
-                                        </div>
-                                        <div class="col-sm-9 col-md-9 mb-9">
-                                            <h1 style="color: white">CleanCity</h1>
-                                            <h4 style="color: white">Una giornata all'insegna della sostenibilità</h4>
-                                            <button id="1" onclick="mostra(this.id)">Partecipa</button>
-
-                                        </div>
-
-
-                                        <div class="col-sm-3 col-md-3 mb-3">
-                                            <img src="assets/img/Eventi/earth.png" class="rounded-circle" width="150">
-                                        </div>
-                                        <div class="col-sm-9 col-md-9 mb-9">
-                                            <h1 style="color: white">CleanCity</h1>
-                                            <h4 style="color: white">Una giornata all'insegna della sostenibilità</h4>
-                                            <button id="2" onclick="mostra(this.id)">Partecipa</button>
-
-                                        </div>
-
-
-                                        <div class="col-sm-3 col-md-3 mb-3">
-                                            <img src="assets/img/Eventi/earth.png" class="rounded-circle" width="150">
-                                        </div>
-                                        <div class="col-sm-9 col-md-9 mb-9">
-                                            <h1 style="color: white">CleanCity</h1>
-                                            <h4 style="color: white">Una giornata all'insegna della sostenibilità</h4>
-                                            <button id="3" onclick="mostra(this.id)">Partecipa</button>
-
-                                        </div>
                                         <!-- End -->
 
 
@@ -213,8 +172,9 @@
                         class="d-flex flex-column align-items-center text-center">
                 </div>
             </div>
-            <div id="codice">
-                <h5>La partecipazione è andata a buon fine!</h5>
+            <div id="conferma">
+                <h5>La creazione è andata a buon fine!
+                   </h5>
 
                 <a style="text-decoration: underline" onclick="chiudi()">Chiudi</a>
             </div>
@@ -234,16 +194,10 @@
     function chiudi() {
         document.getElementById("popup").style.display="none";
     }
-    function cerca(eventi) {
-        var dati=["CleanCity","prova"];
-        for (dati[i=0]; dati[i]!=null; i+2){
-            if(eventi[i].includes(eventi)){
-                document.getElementById(eventi[i]).style.display="block";
-
-            }
-        }
+    function indietro() {
 
     }
+
 
 
 

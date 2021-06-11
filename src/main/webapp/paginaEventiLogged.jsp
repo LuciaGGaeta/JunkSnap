@@ -1,3 +1,5 @@
+<%@ page import="java.util.ArrayList" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,21 +66,21 @@
             <h1 style="margin-top: 100px;margin-bottom: 20px; display: inline-block; ">Eventi</h1>
             <button name="Crea Evento" abled onclick="" style="float: right;margin-top: 100px;margin-bottom: 20px;">Crea Evento</button>
 
-            <!-- Barra di ricerca
+<!-- Barra di ricerca-->
             <% ArrayList <String> eventi= new ArrayList<>();
-            eventi.add("CleanCity");
-            eventi.add("Una giornata all'insegna della sostenibilità");
-            eventi.add("CleanCity");
-            eventi.add("Una giornata all'insegna della sostenibilità");
-            eventi.add("CleanCity");
-            eventi.add("Una giornata all'insegna della sostenibilità");
+                eventi.add("CleanCity");
+                eventi.add("Una giornata all'insegna della sostenibilità");
+                eventi.add("CleanCity");
+                eventi.add("Una giornata all'insegna della sostenibilità");
+                eventi.add("CleanCity");
+                eventi.add("Una giornata all'insegna della sostenibilità");
 
 
-            %>-->
+            %>
             <div id='cerca' style="margin-bottom: 50px">
                 <input id="site-search" name="q" type="search" placeholder="Cerca evento..."
                        aria-label="Search through site content" >
-                <button onclick="cerca(placeholder)"><i class="bi bi-search"></i></button>
+                <button onclick="cerca(<%=eventi%>)"><i class="bi bi-search"></i></button>
             </div>
 
             <!--End Barra di ricerca-->
@@ -214,7 +216,10 @@
                 </div>
             </div>
             <div id="codice">
-                <h5>La partecipazione è andata a buon fine!</h5>
+                <h5>Ecco il tuo codice evento: <script>
+                    var random =Math.floor(Math.random() * 1000) + 1;
+                    document.write(random);
+                </script> </h5>
 
                 <a style="text-decoration: underline" onclick="chiudi()">Chiudi</a>
             </div>
