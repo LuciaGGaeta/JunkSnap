@@ -26,6 +26,8 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/rifiuto.css" rel="stylesheet">
+
     <title>Riconosci rifiuto</title>
 </head>
 
@@ -57,17 +59,17 @@
 
 
 <main id="main">
-    <div class="container">
-        <div class="main-body" style="text-align: center">
+    <div id="container" class="container">
+        <div id="main-body" class="main-body" style="text-align: center; position: relative;">
             <h1 style="margin-top: 100px;margin-bottom: 20px;">Riconosci rifiuto</h1>
             <!--Gallery Trophies-->
             <span onclick="show()" id="upload"> Carica Immagine </span>
-            <div class="col-sm-13" style="width: 50%; height: 50%; left: 25%; margin: auto; background:white; color:black; border:5px solid #000000;">
+            <div id="col-sm-13" class="col-sm-13" style="width: 50%; height: 50%; left: 25%; margin: auto; background:white; color:black; border:5px solid #000000;">
                 <div class="row gutters-sm" style="margin-bottom: 20px;">
                     <div class="col-md-15 mb-3">
                         <div class="card" style="height: 500px; border: none;">
                             <div class="container-fluid">
-                                <div class="px-lg-5">
+                                <div class="px-lg-5" id="father">
                                     <div id="prodotto">
                                         <img id="pic" src="./assets/img/rifiuto/bottiglia.jpg" width="300px" height="450px"  style="visibility: hidden; margin-left: auto;
                                                 margin-right: auto;"/>
@@ -81,7 +83,7 @@
                 </div>
 
             </div>
-            <button id="riconosci_button" style="margin-top: 2px; margin-left: auto; visibility: hidden; margin-right: auto;"> Riconosci </button>
+            <button class="caseOne" id="riconosci_button" onclick="scan()" style="margin-top: 2px; margin-left: auto; visibility: hidden; margin-right: auto;"> Riconosci </button>
          </div>
         </div>
     </div>
