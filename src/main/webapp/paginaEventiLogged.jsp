@@ -74,7 +74,7 @@
                                                 <h1 id="nome0" style="color: white">CleanCity</h1>
                                                 <h4 id="descrizione0" style="color: white">Una giornata all'insegna della sostenibilità</h4>
                                                 <button id="0" onclick="mostra(this.id)">Partecipa</button>
-                                                <button id="-1"onclick="mostraPaginaDettagli(0)">Dettagli Evento</button>
+                                                <button onclick="mostraPaginaDettagli(0)">Dettagli Evento</button>
 
                                             </div>
 
@@ -88,7 +88,7 @@
                                                 <h1 style="color: white">Salerno Pulita</h1>
                                                 <h4 style="color: white">il 15/07 alle 15:00. Una giornata tra le spiagge di Salerno per pulire dai rifiuti.</h4>
                                                 <button id="1" onclick="mostra(this.id)">Partecipa</button>
-                                                <button id="-2"onclick="mostraPaginaDettagli(1)">Dettagli Evento</button>
+                                                <button onclick="mostraPaginaDettagli(1)">Dettagli Evento</button>
 
 
                                             </div>

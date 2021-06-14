@@ -19,7 +19,10 @@
                 <li><a class="nav-link scrollto" href="paginaTrofeiLoggato.jsp">Trofei</a></li><%}else{%>
                 <li><a class="nav-link scrollto" href="paginaTrofeiNonLoggato.jsp">Trofei</a></li>
                 <%}%>
-                <li><a class="nav-link scrollto" href="">JunkCoin</a></li>
+                <%if(user!=null){%>
+                <li><a class="nav-link scrollto" href="junkCoinLoggato.jsp">JunkCoin</a></li><%}else{%>
+                <li><a class="nav-link scrollto" href="junkCoin.jsp">JunkCoin</a></li>
+                <%}%>
                 <%
                     if(user!=null){%>
                 <li><a class="nav-link scrollto" href="profiloUtente.jsp"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
