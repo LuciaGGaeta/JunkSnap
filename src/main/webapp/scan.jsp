@@ -1,3 +1,11 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: lucia
+  Date: 14/06/2021
+  Time: 13:05
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,29 +41,9 @@
 
 <body>
 <!-- ======= Header ======= -->
-<header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center">
+<%@ include file="nav.html"%>
+<!-- End Header -->
 
-        <div class="logo me-auto">
-            <!--<h1><a href="index.html">Mamba</a></h1>-->
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <a href="index.html"><img src="assets/faviconlogo/android-icon-144x144.png" alt="" class="img-fluid"></a>
-        </div>
-
-        <nav id="navbar" class="navbar">
-            <ul>
-                <li><a class="nav-link scrollto" href="">Eventi</a></li>
-                <li><a class="nav-link scrollto" href="">Riconosci rifiuto</a></li>
-                <li><a class="nav-link scrollto" href="">Trofei</a></li>
-                <li><a class="nav-link scrollto" href="">JunkCoin</a></li>
-                <li><a class="nav-link scrollto" href="">Login</a></li>
-
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-
-    </div>
-</header><!-- End Header -->
 
 
 <main id="main">
@@ -85,8 +73,8 @@
 
             </div>
             <button class="caseOne" id="riconosci_button" onclick="scan()" style="margin-top: 2px; margin-left: auto; visibility: hidden; margin-right: auto;"> Riconosci </button>
-         </div>
         </div>
+    </div>
     </div>
     </div>
     </div>
@@ -95,38 +83,25 @@
 </main>
 
 <!-- ======= Footer ======= -->
-<footer id="footer" style="margin-top: 2%">
-
-    <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong><span>JunkSnap</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
-            Designed by Interazione Uomo Macchina - Gruppo 6
-        </div>
-    </div>
-</footer><!-- End Footer -->
+<%@ include file="footer.jsp"%>
+<!-- End Footer -->
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Page JS -->
-    <script src="assets/js/rifiuto.js"></script>
+<!-- Page JS -->
+<script src="assets/js/rifiuto.js"></script>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 
