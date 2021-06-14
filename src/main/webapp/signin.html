@@ -17,6 +17,27 @@
 
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script>
+		function check_fields() {
+			var email = document.getElementById("email").value;
+			var password = document.getElementById("password").value;
+
+			var fields = [email, password];
+			var blank_field = "";
+
+
+			if ((!fields.includes(blank_field))) {
+				alert("Login effettuato con successo");
+				window.location.href="index.jsp";
+				return true;
+			}
+			else {
+				alert("Compilare correttamente la form!");
+				return false;
+			}
+		}
+	</script>
 </head>
 <body>
 <div class="container">
@@ -26,22 +47,24 @@
 				<h3>Login</h3>
 			</div>
 			<div class="card-body">
-				<form>
+				<form action="signIn" method="get">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="far fa-envelope"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="email">
+						<input type="text" id="email" class="form-control" placeholder="email">
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password">
+						<input type="password" id="password" class="form-control" placeholder="password">
 					</div>
 					<div class="form-group">
-						<input type="submit" value="Invia" class="btn login_btn">
+						<a href="http://localhost:8080/JunkSnap_war/index.jsp"> <input type="submit" value="Invia" onclick="check_fields()" class="btn login_btn">
+						</a>
+
 					</div>
 				</form>
 			</div>

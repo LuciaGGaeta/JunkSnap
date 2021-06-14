@@ -34,7 +34,7 @@
 
 <body>
 <!-- ======= Header ======= -->
-<%@ include file="nav.html"%>
+<%@ include file="nav.jsp"%>
 <!-- End Header -->
 
 
