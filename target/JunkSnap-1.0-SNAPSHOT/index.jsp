@@ -48,7 +48,7 @@
 <body>
 
 
-    <%@ include file="nav.html"%>
+    <%@ include file="nav.jsp"%>
         <!-- ======= Hero Section ======= -->
         <section id="hero">
         <div class="hero-container">
