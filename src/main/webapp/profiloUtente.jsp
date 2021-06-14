@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lucia
-  Date: 14/06/2021
-  Time: 13:00
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,13 +33,6 @@
     <link href="assets/css/profiloUtenteStyle.css" rel="stylesheet">
     <link href="assets/css/popupCondividiSuFacebook.css" rel="stylesheet">
     <link href="assets/js/popup.js" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: Mamba - v4.2.0
-    * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body>

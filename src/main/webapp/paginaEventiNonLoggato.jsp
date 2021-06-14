@@ -72,7 +72,7 @@
                                             <div id="des0" class="col-sm-9 col-md-9 mb-9">
                                                 <h1 id="nome0" style="color: white">CleanCity</h1>
                                                 <h4 id="descrizione0" style="color: white">Una giornata all'insegna della sostenibilità</h4>
-                                                <button id="0" onclick="mostra(this.id)" >Partecipa</button>
+                                                <button id="0" ><a style="text-decoration: none;color: black;" href="signin.html">Partecipa</a></button>
                                                 <button onclick="mostraPaginaDettagli(0)">Dettagli Evento</button>
 
                                             </div>
@@ -86,7 +86,7 @@
                                             <div id="des1"class="col-sm-9 col-md-9 mb-9">
                                                 <h1 style="color: white">Salerno Pulita</h1>
                                                 <h4 style="color: white">il 15/07 alle 15:00. Una giornata tra le spiagge di Salerno per pulire dai rifiuti.</h4>
-                                                <button id="1" onclick="mostra(this.id)" >Partecipa</button>
+                                                <button id="1"  ><a style="text-decoration: none;color: black;" href="signin.html">Partecipa</a></button>
                                                 <button onclick="mostraPaginaDettagli(1)">Dettagli Evento</button>
 
 
@@ -99,7 +99,7 @@
                                             <div id="des2"class="col-sm-9 col-md-9 mb-9">
                                                 <h1 style="color: white">GreenPlace</h1>
                                                 <h4 style="color: white">04/06, ore 16:00, via Roma. Riunione per discutere e sensibilizzare sul inquinamento ambientale </h4>
-                                                <button id="2" onclick="mostra(this.id)" >Partecipa</button>
+                                                <button id="2" ><a style="text-decoration: none;color: black;" href="signin.html">Partecipa</a></button>
                                                 <button onclick="mostraPaginaDettagli(2)">Dettagli Evento</button>
 
                                             </div>
@@ -111,7 +111,7 @@
                                             <div id="des3"class="col-sm-9 col-md-9 mb-9">
                                                 <h1 style="color: white">CleanMission</h1>
                                                 <h4 style="color: white">Rendiamo le strade di Fisciano più pulite. </h4>
-                                                <button id="3" onclick="mostra(this.id)"><a href="signIn">Partecipa</a></button>
+                                                <button id="3" ><a style="text-decoration: none;color: black;" href="signin.html">Partecipa</a></button>
                                                 <button onclick="mostraPaginaDettagli(3)">Dettagli Evento</button>
 
                                             </div>
@@ -176,7 +176,7 @@
                                                 </div>
                                                 <div style="margin-top: 20px">
                                                     <button id="000" onclick="mostraPaginaEventi()">Indietro</button>
-                                                    <button id="111" onclick="mostra(this.id)">Partecipa</button>
+                                                    <button id="111" ><a style="text-decoration: none; color: black;" href="signin.html">Partecipa</a></button>
                                                 </div>
 
 

@@ -2,8 +2,6 @@
     <div class="container d-flex align-items-center">
 
         <div class="logo me-auto">
-            <!--<h1><a href="index.html">Mamba</a></h1>-->
-            <!-- Uncomment below if you prefer to use an image logo -->
             <a href="index.jsp"><img src="assets/faviconlogo/android-icon-144x144.png" alt="" class="img-fluid"></a>
         </div>
 
