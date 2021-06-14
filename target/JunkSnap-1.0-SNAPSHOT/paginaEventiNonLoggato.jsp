@@ -45,7 +45,6 @@
         <div class="container">
             <div class="main-body" style="text-align:left">
                 <h1 style="margin-top: 100px;margin-bottom: 20px; display: inline-block; ">Eventi</h1>
-                <button name="Crea Evento" abled onclick="mostraCreaEvento()" style="float: right;margin-top: 100px;margin-bottom: 20px;">Crea Evento</button>
 
                 <!-- Barra di ricerca %>-->
                 <div id='cerca' style="margin-bottom: 50px">
@@ -73,8 +72,8 @@
                                             <div id="des0" class="col-sm-9 col-md-9 mb-9">
                                                 <h1 id="nome0" style="color: white">CleanCity</h1>
                                                 <h4 id="descrizione0" style="color: white">Una giornata all'insegna della sostenibilità</h4>
-                                                <button id="0" onclick="mostra(this.id)">Partecipa</button>
-                                                <button id="-1"onclick="mostraPaginaDettagli(0)">Dettagli Evento</button>
+                                                <button id="0" onclick="mostra(this.id)" disabled>Partecipa</button>
+                                                <button id="pino"onclick="mostraPaginaDettagli(this.id)">Dettagli Evento</button>
 
                                             </div>
 
@@ -87,8 +86,8 @@
                                             <div id="des1"class="col-sm-9 col-md-9 mb-9">
                                                 <h1 style="color: white">Salerno Pulita</h1>
                                                 <h4 style="color: white">il 15/07 alle 15:00. Una giornata tra le spiagge di Salerno per pulire dai rifiuti.</h4>
-                                                <button id="1" onclick="mostra(this.id)">Partecipa</button>
-                                                <button id="-2"onclick="mostraPaginaDettagli(1)">Dettagli Evento</button>
+                                                <button id="1" onclick="mostra(this.id)" disabled>Partecipa</button>
+                                                <button id="-2"onclick="mostraPaginaDettagli(this.id)">Dettagli Evento</button>
 
 
                                             </div>
@@ -100,8 +99,8 @@
                                             <div id="des2"class="col-sm-9 col-md-9 mb-9">
                                                 <h1 style="color: white">GreenPlace</h1>
                                                 <h4 style="color: white">04/06, ore 16:00, via Roma. Riunione per discutere e sensibilizzare sul inquinamento ambientale </h4>
-                                                <button id="2" onclick="mostra(this.id)">Partecipa</button>
-                                                <button onclick="mostraPaginaDettagli(2)">Dettagli Evento</button>
+                                                <button id="2" onclick="mostra(this.id)" disabled>Partecipa</button>
+                                                <button onclick="mostraPaginaDettagli()">Dettagli Evento</button>
 
                                             </div>
 
@@ -112,8 +111,8 @@
                                             <div id="des3"class="col-sm-9 col-md-9 mb-9">
                                                 <h1 style="color: white">CleanMission</h1>
                                                 <h4 style="color: white">Rendiamo le strade di Fisciano più pulite. </h4>
-                                                <button id="3" onclick="mostra(this.id)">Partecipa</button>
-                                                <button onclick="mostraPaginaDettagli(3)">Dettagli Evento</button>
+                                                <button id="3" onclick="mostra(this.id)" disabled>Partecipa</button>
+                                                <button onclick="mostraPaginaDettagli()">Dettagli Evento</button>
 
                                             </div>
 
@@ -126,8 +125,8 @@
                                             <div id="newevent" class="col-sm-9 col-md-9 mb-9" style="display: none;">
                                                 <h1 id="neweventname" style="color: white"></h1>
                                                 <h4 id="newdescription" style="color: white"></h4>
-                                                <button id="4" onclick="mostra(this.id)">Partecipa</button>
-                                                <button onclick="mostraPaginaDettagli(4)">Dettagli Evento</button>
+                                                <button id="4" onclick="mostra(this.id)"disabled>Partecipa</button>
+                                                <button onclick="mostraPaginaDettagli()">Dettagli Evento</button>
                                             </div>
 
                                             <!-- End -->
@@ -158,68 +157,7 @@
 <!-- START CREA EVENTO-->
 
 
-<div id="CreaEvento" style="display: none;">
-    <main id="top2">
-        <div class="container">
-            <div class="main-body" style="text-align:left">
-                <h1 style="margin-top: 100px;margin-bottom: 20px; display: inline-block; ">Crea Evento</h1>
 
-
-
-                <div class="col-sm-14">
-                    <div class="row gutters-sm" style="margin-bottom: 20px;">
-                        <div class="col-md-15 mb-3">
-                            <div class="card" style="overflow: auto; height: 500px; background-color: #2d6760;">
-                                <div class="container-fluid">
-                                    <div class="px-lg-5">
-                                        <div class="row">
-                                            <!-- Gallery item -->
-
-
-
-                                            <div class="col-sm-3 col-md-3 mb-3">
-                                                <img src="assets/img/Eventi/earth.png" class="rounded-circle" width="150" style="margin-top: 50px;">
-                                            </div>
-                                            <div class="col-sm-9 col-md-9 mb-9" style="margin-top: 50px">
-
-
-                                                <span for="fname" style="color: white">Nome Evento:</span>
-                                                <input type="text" id="fname" name="fname" value=""><br>
-                                                <div style="margin-top: 20px;" >
-
-                                                    <span style="display: inline-block; color: white;">Descrizione:</span>
-                                                    <textarea type="text" id="lname" name="lname" style=" vertical-align:middle;margin-left: 2px; width: 300px; height: 300px;" value=""> </textarea>
-
-                                                </div>
-                                                <div style="margin-top: 20px">
-                                                    <button id="00" onclick="mostraPaginaEventi()">Indietro</button>
-                                                    <button id="11" onclick="mostra1(this.id)">Crea</button>
-                                                </div>
-
-
-
-                                            </div>
-
-                                            <!-- End -->
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-    </main>
-</div>
-
-<!-- END CREA EVENTO-->
 
 
 <!-- START DETTAGLI EVENTO-->
@@ -259,7 +197,7 @@
                                                 </div>
                                                 <div style="margin-top: 20px">
                                                     <button id="000" onclick="mostraPaginaEventi()">Indietro</button>
-                                                    <button id="111" onclick="mostra(this.id)">Partecipa</button>
+                                                    <button id="111" onclick="mostra(this.id)"disabled>Partecipa</button>
                                                 </div>
 
 
@@ -321,7 +259,7 @@
                 </div>
             </div>
             <div id="codice">
-                <h5>La partecipazione è stata registrata!<br> Hai guadagnato 10 JunkCoin!</h5>
+                <h5>La partecipazione è stata registrata!</h5>
 
                 <a style="text-decoration: underline" onclick="chiudi()">Chiudi</a>
             </div>
@@ -413,31 +351,8 @@
         document.getElementById("CreaEvento").style.display = "none";
         document.getElementById("PaginaEventi").style.display = "none";
         document.getElementById("DettagliEvento").style.display = "block";
-        if(id==0){
-            document.getElementById("fnameDet").innerHTML="CleanCity";
-            document.getElementById("lnameDet").innerHTML="Una giornata all'insegna della sostenibilità";
-
-        }else if(id==1){
-            document.getElementById("fnameDet").innerHTML="Salerno Pulita";
-            document.getElementById("lnameDet").innerHTML="il 15/07 alle 15:00. Una giornata tra le spiagge di Salerno per pulire dai rifiuti.";
-
-        }else if(id==2){
-            document.getElementById("fnameDet").innerHTML="GreenPlace";
-            document.getElementById("lnameDet").innerHTML="04/06, ore 16:00, via Roma. Riunione per discutere e sensibilizzare sul inquinamento ambientale";
-
-        }else if(id==3){
-            document.getElementById("fnameDet").innerHTML="CleanMission";
-            document.getElementById("lnameDet").innerHTML="Rendiamo le strade di Fisciano più pulite.";
-
-        }else if(id==4){
-            var fname=document.getElementById("neweventname").innerHTML;
-            var lname=document.getElementById("newdescription").innerHTML;
-
-            document.getElementById("fnameDet").innerHTML=fname;
-            document.getElementById("lnameDet").innerHTML=lname;
-
-        }
-
+        document.getElementById("fnameDet").value="CleanCity";
+        document.getElementById("lnameDet").value="Una giornata all'insegna della sostenibilità";
 
 
 
