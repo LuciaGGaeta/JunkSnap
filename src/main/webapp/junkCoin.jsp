@@ -44,15 +44,9 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/profiloUtenteStyle.css" rel="stylesheet">
-    <link href="assets/css/popupCondividiSuFacebook.css" rel="stylesheet">
+    <link href="assets/css/PopupPrenotato.css" rel="stylesheet">
     <link href="assets/js/popup.js" rel="stylesheet">
 
-    <!-- =======================================================
-    * Template Name: Mamba - v4.2.0
-    * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body>
@@ -86,52 +80,58 @@
                             <!-- Gallery item -->
                                         <!--Item-->
                                         <div class="row" >
-                                            <div class="col-sm-2 ">
-                                                <div class="rounded ">
-                                                    <div>
-                                                        <img src="assets/img/junkCoin/pistacchio.png"  height="150" width="150">
+                                            <div div class="col-sm-4 ">
+                                                <div class="col-sm-2 ">
+                                                    <div class="rounded ">
+                                                        <div>
+                                                            <img src="assets/img/junkCoin/pistacchio.png"  height="150" width="150">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="col-sm-2">
-                                                <h2>Luna 365</h2>
-                                                <span>Pistacchio Bio</span><br>
-                                                <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
-                                                <button style="width: auto">Riscatta</button>
+                                                <div class="col-sm-2">
+                                                    <h2>Luna 365</h2>
+                                                    <span>Pistacchio Bio</span><br>
+                                                    <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
+                                                    <button style="width: auto" onclick="mostra()">Riscatta</button>
+                                                </div>
                                             </div>
                                             <!--End Item-->
 
                                             <!--Item-->
-                                            <div class="col-sm-2">
-                                                <div class="rounded ">
-                                                    <div>
-                                                        <img src="assets/img/junkCoin/Shampoo.png" height="150" width="150">
+                                            <div div class="col-sm-4 ">
+                                                <div class="col-sm-2">
+                                                    <div class="rounded ">
+                                                        <div>
+                                                            <img src="assets/img/junkCoin/Shampoo.png" height="150" width="150">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="col-sm-2">
-                                                <h2>Luna 365</h2>
-                                                <span>Shampoo Bio</span><br>
-                                                <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
-                                                <button style="width: auto">Riscatta</button>
+                                                <div class="col-sm-2">
+                                                    <h2>Luna 365</h2>
+                                                    <span>Shampoo Bio</span><br>
+                                                    <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
+                                                    <button style="width: auto">Riscatta</button>
+                                                </div>
                                             </div>
                                             <!--End Item-->
                                             <!--Item-->
-                                            <div class="col-sm-2 ">
-                                                <div class="rounded ">
-                                                    <div>
-                                                        <img src="assets/img/junkCoin/cioccolata.png"  height="150" width="150">
+                                            <div div class="col-sm-4 ">
+                                                <div class="col-sm-2 ">
+                                                    <div class="rounded ">
+                                                        <div>
+                                                            <img src="assets/img/junkCoin/cioccolata.png"  height="150" width="150">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="col-sm-2">
-                                                <h2>Luna 365</h2>
-                                                <span>Cioccolata Bio</span><br>
-                                                <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
-                                                <button style="width: auto">Riscatta</button>
+                                                <div class="col-sm-2">
+                                                    <h2>Luna 365</h2>
+                                                    <span>Cioccolata Bio</span><br>
+                                                    <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
+                                                    <button style="width: auto">Riscatta</button>
+                                                </div>
                                             </div>
                                             <!--End Item-->
 
@@ -154,28 +154,31 @@
 
 
 <!-- popup -->
-<div class="popScroll" style="display:none;" id="popup">
-    <div class="popup">
-        <h1>Complimenti!</h1>
-        <div class="subscribe-widget">
-            <div class="rounded ">
-                <div class="d-flex flex-column align-items-center text-center">
-                    <img src="assets/img/profiloUtente/trofeo.png" class="rounded-circle" width="150">
+    <!--  popup BuonoNonRiscattato -->
+
+    <div class="popScroll" style="display:none;" id=popup;">
+        <div class="popup">
+
+            <h1>Atten</h1>
+            <div class="subscribe-widget">
+                <div class="rounded ">
+                    <div
+                            class="d-flex flex-column align-items-center text-center">
+                    </div>
                 </div>
+                <div id="buonfine">
+                    <h5>Non puoi riscattare il buono perché non hai eseguito l'accesso!
+                    </h5>
+                    <a style="text-decoration: underline" href="">Accedi</a>
+                    <a style="text-decoration: underline" onclick="chiudi(this.id)">Chiudi</a>
+                </div>
+
+
             </div>
-            <div id="nonCondiviso">
-                <h5>Condividi i tuoi successi su Facebook!</h5>
-                <button type="submit" class="button" id="condividi" onclick="condividi()">Condividi su Facebook <i class="bi bi-facebook"></i></button><br>
-                <a style="text-decoration: underline" onclick="chiudi()">Indietro</a>
-            </div>
-            <div id="condiviso" style="display: none">
-                <h5>Condiviso con successo su Facebook!</h5>
-                <a style="text-decoration: underline" onclick="chiudi()" >Chiudi!</a>
-            </div>
+
 
         </div>
     </div>
-</div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 <!-- End popup -->
 
@@ -194,14 +197,10 @@
 <script>
     function mostra() {
         document.getElementById("popup").style.display="block";
-        document.getElementById("condiviso").style.display="none";
-        document.getElementById("nonCondiviso").style.display="block";
+
+
     }
 
-    function condividi() {
-        document.getElementById("nonCondiviso").style.display="none";
-        document.getElementById("condiviso").style.display="block";
-    }
 
     function chiudi() {
         document.getElementById("popup").style.display="none";
