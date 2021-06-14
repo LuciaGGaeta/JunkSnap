@@ -476,15 +476,24 @@
             }
 
 */
-        for (var i = 0; i < dati.length; i++) {
-            if (dati[i] == info) {
-                var img = "img" + i;
-                var des = "des" + i;
+        for (var i = 0; i <= dati.length; i++) {
+            if (dati[i] != info) {
+                var img = "img" + i+"";
+                var des = "des" + i+"";
                 document.getElementById(img).style.display = "none";
                 document.getElementById(des).style.display = "none";
 
 
             }
+
+        }
+        if (!("a" != info)) {
+            var img = "img" + i+"";
+            var des = "des" + i+"";
+            document.getElementById(img).style.display = "block";
+            document.getElementById(des).style.display = "block";
+
+
         }
 
     }

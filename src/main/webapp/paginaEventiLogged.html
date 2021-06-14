@@ -462,24 +462,15 @@
 
     }
     function cerca() {
-        var dati = ["CleanCity", "Salerno Pulita", "GreenPlace", "CleanMission"];
-        var info = document.getElementById("site-search").value;
-
-        /*  for (var i=0; i<dati.length+1; i++){
-
-                var img="img"+(i+1);
-                var des="des"+(i+1);
-                document.getElementById(img).style.display="block";
-                document.getElementById(des).style.display="block";
+        var dati = ["cleancity", "salerno pulita", "greenplace", "cleanmission"];
+        var info1= document.getElementById("site-search").value+"";
+        var info=info1.toLowerCase();
 
 
-            }
-
-*/
         for (var i = 0; i <= dati.length; i++) {
-            if (!(dati[i] != info)) {
-                var img = "img" + i+"";
-                var des = "des" + i+"";
+            if (!(dati[i].includes(info))) {
+                var img = "img" + i;
+                var des = "des" + i;
                 document.getElementById(img).style.display = "none";
                 document.getElementById(des).style.display = "none";
 
@@ -487,14 +478,7 @@
             }
 
         }
-        if (!("a" != info)) {
-            var img = "img" + i+"";
-            var des = "des" + i+"";
-            document.getElementById(img).style.display = "block";
-            document.getElementById(des).style.display = "block";
 
-
-        }
 
     }
 
