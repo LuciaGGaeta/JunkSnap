@@ -91,65 +91,71 @@
                 </div>
             </div>
 
-            <!--Gallery Trophies-->
-
-            <div class="col-sm-12" style="overflow:auto;">
+            <!--Gallery Buoni-->
+            <div class="col-lg-12 md-12 xs-12 sm-12" style="overflow:auto;">
                 <!-- Gallery item -->
-                <!--Item-->
                 <div class="row" >
-                    <div class="col-sm-2 ">
-                        <div class="rounded ">
+
+                    <!--Item-->
+                    <div class="row col-lg-4 md-4 xs-4 sm-4">
+
+                        <div class="col-lg-6 md-6 xs-6 sm-6" >
                             <div>
-                                <img src="assets/img/junkCoin/pistacchio.png"  height="150" width="150">
+                                <div>
+                                    <img src="assets/img/junkCoin/pistacchio.png" width="95" height="95">
+                                </div>
                             </div>
+                        </div>
+
+                        <div class="col-lg-6 md-6 xs-6 sm-6">
+                            <h2>Luna 365</h2>
+                            <span>Pistacchio Bio</span><br>
+                            <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
+                            <button style="width: auto" onclick="mostra()">Riscatta</button>
                         </div>
                     </div>
 
-                    <div class="col-sm-2">
-                        <h2>Luna 365</h2>
-                        <span>Pistacchio Bio</span><br>
-                        <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
-                        <button style="width: auto">Riscatta</button>
-                    </div>
                     <!--End Item-->
 
                     <!--Item-->
-                    <div class="col-sm-2">
-                        <div class="rounded ">
-                            <div>
-                                <img src="assets/img/junkCoin/Shampoo.png" height="150" width="150">
+                    <div class="row col-lg-4 md-4 xs-4 sm-4">
+                        <div class="col-lg-6 md-6 xs-6 sm-6">
+                            <div class="rounded ">
+                                <div>
+                                    <img src="assets/img/junkCoin/Shampoo.png"  width="95" height="95">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-sm-2">
-                        <h2>Luna 365</h2>
-                        <span>Shampoo Bio</span><br>
-                        <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
-                        <button style="width: auto">Riscatta</button>
+                        <div class="col-lg-6 md-6 xs-6 sm-6">
+                            <h2>Luna 365</h2>
+                            <span>Shampoo Bio</span><br>
+                            <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
+                            <button style="width: auto" onclick="mostra()">Riscatta</button>
+                        </div>
                     </div>
                     <!--End Item-->
                     <!--Item-->
-                    <div class="col-sm-2 ">
-                        <div class="rounded ">
-                            <div>
-                                <img src="assets/img/junkCoin/cioccolata.png"  height="150" width="150">
+                    <div class="row col-lg-4 md-4 xs-4 sm-4">
+                        <div class="col-lg-6 md-6 xs-6 sm-6">
+                            <div class="rounded ">
+                                <div>
+                                    <img src="assets/img/junkCoin/cioccolata.png"  width="95" height="95">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-sm-2">
-                        <h2>Luna 365</h2>
-                        <span>Cioccolata Bio</span><br>
-                        <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
-                        <button style="width: auto">Riscatta</button>
+                        <div class="col-lg-6 md-6 xs-6 sm-6">
+                            <h2>Luna 365</h2>
+                            <span>Cioccolata Bio</span><br>
+                            <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
+                            <button style="width: auto" onclick="mostra()">Riscatta</button>
+                        </div>
                     </div>
                     <!--End Item-->
 
                 </div>
             </div>
-        </div>
-
 
         <!--End gallery -->
         </div>
