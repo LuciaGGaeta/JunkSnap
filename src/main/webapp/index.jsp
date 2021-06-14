@@ -119,9 +119,8 @@
         <span>Manager del gruppo</span>
         <div class="social">
         <a href=""><i class="bi bi-github"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href=><i class="bi bi-instagram"></i></a>
+        <a href=><i class="bi bi-linkedin"></i></a>
         </div>
         </div>
         </div>
@@ -134,10 +133,9 @@
         <h4>Lucia Gaeta</h4>
         <span>Manager della documentazione</span>
         <div class="social">
-        <a href=""><i class="bi bi-github"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/LuciaGGaeta"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/luciagaeta98/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/lucia-gaeta-a479a81b7"><i class="bi bi-linkedin"></i></a>
         </div>
         </div>
         </div>
@@ -151,7 +149,6 @@
         <span>Manager della valutazione</span>
         <div class="social">
         <a href="https://github.com/EDesimone12"><i class="bi bi-github"></i></a>
-        <a href="https://www.facebook.com/eugenio.desimone.52"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/eugenio_desimone/"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/eugenio-de-simone-32a700175/"><i class="bi bi-linkedin"></i></a>
         </div>
@@ -167,7 +164,6 @@
         <span>Manager di progetto</span>
         <div class="social">
         <a href=""><i class="bi bi-github"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
         <a href=""><i class="bi bi-instagram"></i></a>
         <a href=""><i class="bi bi-linkedin"></i></a>
         </div>

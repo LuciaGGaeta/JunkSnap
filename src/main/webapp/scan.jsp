@@ -29,6 +29,7 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/rifiuto.css" rel="stylesheet">
+    <link href="assets/js/rifiuto.js" rel="stylesheet">
 
     <title>Riconosci rifiuto</title>
 </head>
@@ -42,31 +43,38 @@
 
 <main id="main">
     <div id="container" class="container">
-        <div id="main-body" class="main-body" style="text-align: center;">
-            <h1 style="margin-top: 100px;margin-bottom: 20px;">Riconosci rifiuto</h1>
-            <!--Gallery Trophies-->
-            <span onclick="show()" id="upload"> Carica Immagine </span>
-            <div id="col-sm-13" class="col-sm-13" style="width: 50%; height: 50%; left: 25%; margin: auto; background:white; color:black; border:5px solid #000000;">
-                <div class="row gutters-sm" style="margin-bottom: 20px;">
-                    <div class="col-md-15 mb-3">
-                        <div class="card" style="height: 500px; border: none;">
-                            <div class="container-fluid">
-                                <div class="px-lg-5" id="father">
-                                    <div id="prodotto">
-                                        <img  id="pic" src="./assets/img/rifiuto/bottiglia.jpg" width="90%" height="90%" style="visibility: hidden; margin-left: auto;
-                                                margin-right: auto;"/>
-                                    </div><!--- End prodotto div --->
-                                    <button id="camera_button" onclick="show()" style="margin-bottom: 10px; border-radius: 50px; height: 50px; width: 50px;"> <i class="bi bi-camera-fill"></i></button>
 
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+        <div id="main-body" class="main-body" >
+            <div class="row justify-content-center align-items-center">
+                <h1 style="margin-top:20px; margin-bottom: 20px; text-align: center;">Riconosci rifiuto</h1>
             </div>
-            <button class="caseOne" id="riconosci_button" onclick="scan()" style="margin-top: 2px; margin-left: auto; visibility: hidden; margin-right: auto;"> Riconosci </button>
+
+
+            <!--Gallery Trophies-->
+            <div class="row justify-content-center align-items-center">
+                    <span onclick="show()" id="upload" style=" text-align: center;color: #5ef118;text-decoration:underline;"> Carica Immagine </span>
+            </div>
+
+
+            <div id="col-sm-13" class="row justify-content-center align-items-center col-lg-12">
+                <div class="col-lg-4">
+                </div>
+                    <div class="col-lg-4" style="background:white; color:black; border:5px solid #000000;">
+                        <img class="col-lg-12" id="pic" src="./assets/img/rifiuto/bottiglia.jpg" width="90%" height="90%" style="visibility: hidden;"/>
+                    </div>
+
+                <div class="col-lg-4 " id="descrizione" style="visibility: hidden;text-align: center;">
+                        <span style="margin:auto;"><b>Tipo di rifiuto:</b>Bottiglia di plastica</span> <br>
+                        <span style="margin:auto;"><b>Materiale:</b>Plastica</span>
+
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <button id="camera_button" onclick="show()" style="margin-bottom: 10px; border-radius: 50px; height: 50px; width: 50px;"> <i class="bi bi-camera-fill"></i></button>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <button class="caseOne" id="riconosci_button" onclick="scan()" style="width:auto;margin-top: 2px; margin-bottom:10px;visibility: hidden; "> Riconosci </button>
+            </div>
         </div>
     </div>
     </div>
