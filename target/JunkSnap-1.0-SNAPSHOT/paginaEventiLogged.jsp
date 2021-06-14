@@ -34,7 +34,7 @@
 
 <body>
 <!-- ======= Header ======= -->
-<%@ include file="nav.jsp"%>
+<%@ include file="nav.html"%>
 <!-- End Header -->
 
 
@@ -74,7 +74,7 @@
                                                 <h1 id="nome0" style="color: white">CleanCity</h1>
                                                 <h4 id="descrizione0" style="color: white">Una giornata all'insegna della sostenibilità</h4>
                                                 <button id="0" onclick="mostra(this.id)">Partecipa</button>
-                                                <button id="pino"onclick="mostraPaginaDettagli(this.id)">Dettagli Evento</button>
+                                                <button id="-1"onclick="mostraPaginaDettagli(0)">Dettagli Evento</button>
 
                                             </div>
 
@@ -88,7 +88,7 @@
                                                 <h1 style="color: white">Salerno Pulita</h1>
                                                 <h4 style="color: white">il 15/07 alle 15:00. Una giornata tra le spiagge di Salerno per pulire dai rifiuti.</h4>
                                                 <button id="1" onclick="mostra(this.id)">Partecipa</button>
-                                                <button id="-2"onclick="mostraPaginaDettagli(this.id)">Dettagli Evento</button>
+                                                <button id="-2"onclick="mostraPaginaDettagli(1)">Dettagli Evento</button>
 
 
                                             </div>
@@ -101,7 +101,7 @@
                                                 <h1 style="color: white">GreenPlace</h1>
                                                 <h4 style="color: white">04/06, ore 16:00, via Roma. Riunione per discutere e sensibilizzare sul inquinamento ambientale </h4>
                                                 <button id="2" onclick="mostra(this.id)">Partecipa</button>
-                                                <button onclick="mostraPaginaDettagli()">Dettagli Evento</button>
+                                                <button onclick="mostraPaginaDettagli(2)">Dettagli Evento</button>
 
                                             </div>
 
@@ -113,7 +113,7 @@
                                                 <h1 style="color: white">CleanMission</h1>
                                                 <h4 style="color: white">Rendiamo le strade di Fisciano più pulite. </h4>
                                                 <button id="3" onclick="mostra(this.id)">Partecipa</button>
-                                                <button onclick="mostraPaginaDettagli()">Dettagli Evento</button>
+                                                <button onclick="mostraPaginaDettagli(3)">Dettagli Evento</button>
 
                                             </div>
 
@@ -127,7 +127,7 @@
                                                 <h1 id="neweventname" style="color: white"></h1>
                                                 <h4 id="newdescription" style="color: white"></h4>
                                                 <button id="4" onclick="mostra(this.id)">Partecipa</button>
-                                                <button onclick="mostraPaginaDettagli()">Dettagli Evento</button>
+                                                <button onclick="mostraPaginaDettagli(4)">Dettagli Evento</button>
                                             </div>
 
                                             <!-- End -->
@@ -321,7 +321,7 @@
                 </div>
             </div>
             <div id="codice">
-                <h5>La partecipazione è stata registrata!</h5>
+                <h5>La partecipazione è stata registrata!<br> Hai guadagnato 10 JunkCoin!</h5>
 
                 <a style="text-decoration: underline" onclick="chiudi()">Chiudi</a>
             </div>
@@ -413,8 +413,31 @@
         document.getElementById("CreaEvento").style.display = "none";
         document.getElementById("PaginaEventi").style.display = "none";
         document.getElementById("DettagliEvento").style.display = "block";
-        document.getElementById("fnameDet").value="CleanCity";
-        document.getElementById("lnameDet").value="Una giornata all'insegna della sostenibilità";
+        if(id==0){
+            document.getElementById("fnameDet").innerHTML="CleanCity";
+            document.getElementById("lnameDet").innerHTML="Una giornata all'insegna della sostenibilità";
+
+        }else if(id==1){
+            document.getElementById("fnameDet").innerHTML="Salerno Pulita";
+            document.getElementById("lnameDet").innerHTML="il 15/07 alle 15:00. Una giornata tra le spiagge di Salerno per pulire dai rifiuti.";
+
+        }else if(id==2){
+            document.getElementById("fnameDet").innerHTML="GreenPlace";
+            document.getElementById("lnameDet").innerHTML="04/06, ore 16:00, via Roma. Riunione per discutere e sensibilizzare sul inquinamento ambientale";
+
+        }else if(id==3){
+            document.getElementById("fnameDet").innerHTML="CleanMission";
+            document.getElementById("lnameDet").innerHTML="Rendiamo le strade di Fisciano più pulite.";
+
+        }else if(id==4){
+            var fname=document.getElementById("neweventname").innerHTML;
+            var lname=document.getElementById("newdescription").innerHTML;
+
+            document.getElementById("fnameDet").innerHTML=fname;
+            document.getElementById("lnameDet").innerHTML=lname;
+
+        }
+
 
 
 
