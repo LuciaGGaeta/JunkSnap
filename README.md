@@ -1,6 +1,6 @@
 # JunkSnap
 <div align = "center">
-    <img src="src/main/webapp/assets/logo64.ico"  alt="Logo">
+    <img src="src/main/webapp/assets/img/WhatsApp%20Image%202021-06-15%20at%2019.06.01.jpeg" width="200" height="200" alt="Logo">
 </div>
 
 # Introduzione
