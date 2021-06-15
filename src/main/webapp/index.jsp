@@ -37,12 +37,6 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- =======================================================
-    * Template Name: Mamba - v4.2.0
-    * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body>
@@ -76,7 +70,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2.jpeg');">
+        <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3.jpeg');">
         <div class="carousel-container">
         <div class="carousel-content container">
         </div>

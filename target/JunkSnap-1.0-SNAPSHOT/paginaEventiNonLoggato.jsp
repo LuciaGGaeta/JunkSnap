@@ -29,7 +29,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <link href="assets/css/PopupPrenotato.css" rel="stylesheet">
-    <title>EventiLogged</title>
+    <title>Eventi</title>
 </head>
 
 <body>
