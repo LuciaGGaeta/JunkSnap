@@ -84,7 +84,7 @@
                     <div class="card" style="border: none">
                         <div class="card-body">
                             <div class="d-flex flex-column align-items-center text-center">
-                                <img src="assets/img/slide/slide-2.jpeg" height="400">
+                                <img src="assets/img/slide/slide-3.jpeg" height="400">
                             </div>
                         </div>
                     </div>
