@@ -13,8 +13,4 @@ e il completamento di obiettivi che portano a guadagnare trofei condivisibili su
 # Contributors
 Eugenio De Simone,Andrea Squillante, Lucia Gaeta, Francesco Maria Rastelli
 
-# Tools
-Bootstrap
-MySql
-Maven
-Tomcat
+
