@@ -1,6 +1,6 @@
 # JunkSnap
 <div align = "center">
-    <img src="src/main/webapp/assets/logo64.ico" width="200" height="200" alt="Logo">
+    <img src="src/main/webapp/assets/logo64.ico"  alt="Logo">
 </div>
 
 # Introduzione
