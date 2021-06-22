@@ -2,7 +2,7 @@
     <div class="container d-flex align-items-center">
 
         <div class="logo me-auto">
-            <a href="index.jsp"><img src="assets/faviconlogo/android-icon-144x144.png" alt="" class="img-fluid"></a>
+            <a href="index.jsp"><img src="assets/faviconlogo/android-icon-144x144.png" alt="JunkSNap" class="img-fluid"></a>
         </div>
 
         <nav id="navbar" class="navbar">

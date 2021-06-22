@@ -94,7 +94,7 @@
                                                     <div class="col-lg-6 md-6 xs-6 sm-6">
                                                         <h2>Luna 365</h2>
                                                         <span>Pistacchio Bio</span><br>
-                                                        <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
+                                                        <span>30 <b>JunkCoin</b><i class="bi bi-cash"></i></span><br>
                                                         <button style="width: auto" onclick="mostra()">Riscatta</button>
                                                     </div>
                                                 </div>
@@ -114,7 +114,7 @@
                                                 <div class="col-lg-6 md-6 xs-6 sm-6">
                                                     <h2>Luna 365</h2>
                                                     <span>Shampoo Bio</span><br>
-                                                    <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
+                                                    <span>30 <b>JunkCoin</b> <i class="bi bi-cash"></i></span><br>
                                                     <button style="width: auto" onclick="mostra()">Riscatta</button>
                                                 </div>
                                             </div>
@@ -132,7 +132,7 @@
                                                 <div class="col-lg-6 md-6 xs-6 sm-6">
                                                     <h2>Luna 365</h2>
                                                     <span>Cioccolata Bio</span><br>
-                                                    <span>30JunkCoin <i class="bi bi-cash"></i></span><br>
+                                                    <span>30 <b>JunkCoin</b><i class="bi bi-cash"></i></span><br>
                                                     <button style="width: auto" onclick="mostra()">Riscatta</button>
                                                 </div>
                                              </div>

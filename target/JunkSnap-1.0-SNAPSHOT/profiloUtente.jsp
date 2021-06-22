@@ -92,7 +92,7 @@
                                     <h6 class="mb-0">JunkCoin <img src="assets/img/profiloUtente/junkcoin.png"></h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
-                                    300
+                                    330
                                 </div>
                             </div>
                         </div>
